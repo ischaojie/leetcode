@@ -30,7 +30,6 @@ def solution2(nums):
             return k
 
 
-
 # 矩阵置零
 def solution3(nums):
 
@@ -67,3 +66,20 @@ def solution4(node, k):
         cur = temp
         i += 1
     return pre
+
+
+# 买卖股票最佳时机
+def solution5(prices):
+    if len(prices) <= 1:
+        return 0
+
+    min = prices[0]
+    max = 0
+    for price in prices:
+        # 当前最大和今天的减去之前最小的哪个大
+        if max < price - min:
+            max = price - min
+        # 找最小
+        if min > price:
+            min = price
+    return max

@@ -39,12 +39,12 @@ class Solution:
             cur_j = j + direct[1]
 
             # 找到该节点
-            if cur_i>=0 and cur_j>= 0 and cur_i<len(board) and cur_j<len(board[0]) and board[cur_i][cur_j] == word[0]:
-                
+            if cur_i >= 0 and cur_j >= 0 and cur_i < len(board) and cur_j < len(board[0]) and board[cur_i][cur_j] == word[0]:
+
                 # 如果已经被标记过，继续
                 if mark[cur_i][cur_j] == 1:
                     continue
-                
+
                 # 标记为访问
                 mark[cur_i][cur_j] = 1
 
