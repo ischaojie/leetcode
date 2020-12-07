@@ -1,0 +1,7 @@
+# IDE firle
+.idea
+.vscode
+
+# python
+.pytest_cache
+__pycache__
