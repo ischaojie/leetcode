@@ -11,7 +11,7 @@ def solution(arrs, num: int) -> bool:
 
     if len(arrs) == 0:
         return False
-    # 定位四个点
+    # * 定位四个点
     left, right, up, down = 0, len(arrs[0]), len(arrs)-1, len(arrs)
     
     while left < right and up < down:

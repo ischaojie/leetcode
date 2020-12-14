@@ -5,6 +5,10 @@ class TreeNode:
         self.right = None
 
 from typing import List
+
+"""
+从上到下按层打印
+"""
 class Solution:
     def levelOrder(self, root: TreeNode) -> List[List[int]]:
         if root is None: return []
