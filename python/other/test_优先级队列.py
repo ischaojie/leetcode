@@ -26,7 +26,7 @@ class PriorityQueue:
 class PQueue:
     def __init__(self):
         # 队列元素
-        self.elem = []
+        self.elem = [0]
         # 队列元素索引
         self.index = 0
 
@@ -38,7 +38,7 @@ class PQueue:
         向堆末尾插入元素，上浮
         """
         self.index += 1
-        self.elem[self.index] = elem
+        self.elem.append(elem)
         self._swim(self.index)
 
     def pop(self):
