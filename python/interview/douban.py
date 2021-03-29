@@ -12,7 +12,7 @@ def author_clear(author: str) -> str:
 
     for i, a in enumerate(temp):
         if a in left_bracket:
-            for j, b in enumerate(temp[i:]):
+            for j, b in enumerate(temp[i+1:]):
                 if b in right_bracket:
                     res.extend(temp[:i])
                     temp = temp[j+1:]
